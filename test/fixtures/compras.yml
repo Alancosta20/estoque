@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantidade: 1
+  valor: 1.5
+  data: 2024-11-19
+  descricao: MyText
+  usuario: one
+  produto: one
+
+two:
+  quantidade: 1
+  valor: 1.5
+  data: 2024-11-19
+  descricao: MyText
+  usuario: two
+  produto: two
