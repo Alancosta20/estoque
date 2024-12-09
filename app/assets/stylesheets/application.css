@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {
+    background-color: #474747;
+    color: white;
+    font-family: Inter;
+
+ }
+
+ .titulo-formulario {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;  
+    margin-top: 60px; 
+ }
+
+ .container-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    
+ }
+
+ .outer-container {
+    width: 800px;
+    margin: 0 auto;
+
+ }
+
+ .text-input {
+    padding: 9px;
+    border-radius: 6px;
+ }
+
+ .botao-enviar {
+    background-color: #34DAFF;
+    color: white;
+    padding: 10px;
+    width: 155px;
+    border-radius: 8px;
+    border: 0;
+    align-self: flex-end;
+    margin-top: 18px;
+
+ }
+

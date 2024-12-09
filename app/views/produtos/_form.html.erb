@@ -1,9 +1,9 @@
 <%= form_with model: @produto do |formulario|%>
-    <div>
+    <div class = "container-formulario">
         <%=formulario.label :nome%>
-        <%=formulario.text_field :nome%>
+        <%=formulario.text_field :nome, placeholder: "Digite o nome do Produto", class: "text-input"%>
 
-        <%=formulario.submit "Salvar Produto"%>
+        <%=formulario.submit "Salvar Produto", class: "botao-enviar"%>
 
     </div>
 <%end%>
