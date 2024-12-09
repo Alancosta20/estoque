@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @produtos.each do |produto| %>
+            <tr>
+                <td><%=produto.nome%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

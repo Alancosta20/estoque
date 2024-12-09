@@ -1,0 +1,9 @@
+<%= form_with model: @produto do |formulario|%>
+    <div>
+        <%=formulario.label :nome%>
+        <%=formulario.text_field :nome%>
+
+        <%=formulario.submit "Salvar Produto"%>
+
+    </div>
+<%end%>
