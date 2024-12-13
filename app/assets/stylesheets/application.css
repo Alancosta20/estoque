@@ -26,7 +26,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 29.05px;  
-    margin-top: 60px; 
+    margin: 0px; 
  }
 
  .container-formulario {
@@ -39,7 +39,7 @@
 
  .outer-container {
     width: 800px;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
 
  }
 
@@ -48,7 +48,7 @@
     border-radius: 6px;
  }
 
- .botao-enviar {
+ .botao-enviar  {
     background-color: #34DAFF;
     color: white;
     padding: 10px;
@@ -56,7 +56,22 @@
     border-radius: 8px;
     border: 0;
     align-self: flex-end;
-    margin-top: 18px;
+    margin: 0px;
+    cursor: pointer;
+    transition: 0.5s; 
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+ }
 
+ .botao-enviar:hover {
+   background-color: #2db5d4;
+   
+ }
+
+ .used-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
  }
 
