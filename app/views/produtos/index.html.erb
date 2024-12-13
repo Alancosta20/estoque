@@ -5,12 +5,14 @@
     </div>
 
     <%@produtos.each do |produto|%>
-        <div>
+        <div class = "container-produtos">
             <h3>
                <%=produto.nome%>
             </h3>
-            <%=link_to "Editar", edit_produto_path(produto) %>
-            <%=link_to "Excluir", produto_path(produto), data:{turbo_method: :delete}%>
+            <div>
+                <%=link_to "Editar", edit_produto_path(produto), class: "link" %>
+                <%=link_to "Excluir", produto_path(produto), data:{turbo_method: :delete}, class:"link"%>
+            </div>
         </div>
     <%end%>
 

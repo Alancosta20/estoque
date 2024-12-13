@@ -29,7 +29,7 @@ class ProdutosController < ApplicationController
 
   def update 
     @produto=Produto.find(params[:id])
-    @produto.update(produto_params)
+    @produto.update(produtos_params)
     redirect_to produtos_path
   end
 
