@@ -79,6 +79,10 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   
+ }
+
+ .container-geral {
    background-color: black;
    margin-bottom: 20px;
    margin-top: 32px;
@@ -87,9 +91,10 @@
    padding: 7px 25px 7px 25px;
  }
 
- .container-produtos h3 {
+ .container-geral h3 {
    font-size: 18px;
  }
+
 
  .link {
    color: white;

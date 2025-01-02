@@ -1,0 +1,16 @@
+<div class= "outer-container">
+    <div class= "used-flex">
+        <h1 class= "titulo-formulario">Minhas Compras</h1>
+        <%=link_to "+ Nova Compra", new_compra_path, class: "botao-enviar"%>
+    </div>
+
+    <%@compras.each do |compra|%>
+        <div class = "container-geral">
+            <div class="used-flex">
+                <h3><%=compra.data%></h3>
+                <h3><%=compra.valor%></h3>
+            </div>
+        </div>
+    <%end%>
+
+</div>

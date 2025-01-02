@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :produtos, except: [:show]
+  resources :compras, except: [:show]
 end
