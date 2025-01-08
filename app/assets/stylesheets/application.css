@@ -110,3 +110,9 @@
  .gap {
   gap: 200px;
  }
+
+ .colunas-formulario {
+  display: flex;
+  gap: 70px;
+  
+ }

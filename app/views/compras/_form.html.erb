@@ -1,0 +1,27 @@
+<%= form_with model: @compra do |formulario|%>
+    <div class = "container-formulario ">
+
+        <div class="colunas-formulario">
+            <div class = "container-formulario grow">
+                <%=formulario.label :produto_id%>
+                <%=formulario.select :produto_id, Produto.all.map{|produto| [produto.nome, produto.id]}, {}, class: "text-input"%>
+                <%=formulario.label :valor%>
+                <%=formulario.number_field :valor, class: "text-input"%>
+                <%=formulario.label :quantidade%>
+                <%=formulario.number_field :quantidade, class: "text-input"%>
+            </div>
+            <div class = "container-formulario grow">
+                <%=formulario.label :data%>
+                <%=formulario.date_field :data, class: "text-input"%>
+                <%=formulario.label :descricao%>
+                <%=formulario.text_area :descricao, cols: 30, rows: 7%>
+            </div>
+        </div>
+
+
+        
+
+        <%=formulario.submit "Salvar Produto", class: "botao-enviar"%>
+
+    </div>
+<%end%>
