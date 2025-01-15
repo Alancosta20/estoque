@@ -2,6 +2,8 @@ class Compra < ApplicationRecord
   belongs_to :usuario
   belongs_to :produto
 
+  validates_presence_of :data, :quantidade, :valor, :usuario, :produto
+
   after_create :associar_armazenamento
   
   def associar_armazenamento
