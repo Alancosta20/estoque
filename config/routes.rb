@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   resources :produtos, except: [:show]
   resources :compras, except: [:show]
+  resources :armazenamentos, only: [:index, :edit, :update]
 end

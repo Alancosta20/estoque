@@ -75,6 +75,10 @@
    align-items: center;
  }
 
+ .used-space {
+  margin-bottom: 8px;
+ }
+
  .container-produtos {
    display: flex;
    justify-content: space-between;
@@ -103,6 +107,11 @@
    margin-left: 15px;
  }
 
+ .link-edit {
+  color: #2db5d4;
+  text-decoration: none;
+ }
+
  .grow {
   flex-grow: 1;
  }
@@ -115,4 +124,22 @@
   display: flex;
   gap: 70px;
   
+ }
+
+ .card-estoque {
+  width: 180px;
+  padding-bottom: 30px;
+ }
+
+ .card-break {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  
+ }
+
+ .card-break .container-geral {
+  margin: 0;
+
  }

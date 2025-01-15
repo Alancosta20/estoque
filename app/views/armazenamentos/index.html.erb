@@ -1,0 +1,26 @@
+<div class= "outer-container">
+    <div class= "used-flex">
+        <h1 class= "titulo-formulario">Meu Estoque</h1>
+        <%=link_to "+ Nova Compra", new_compra_path, class: "botao-enviar"%>
+    </div>
+
+    <div class= "card-break">
+        <%@armazenamentos.each do |armazenamento|%>
+            <div class = "container-geral card-estoque">
+                <h3><%=armazenamento.produto.nome%></h3>
+                <div class= "used-flex used-space">
+                    <span>Quantidade</span>
+                    <span><%=armazenamento.quantidade%></span>
+                </div>
+                <div class= "used-flex used-space">
+                    <span>Valor</span>
+                    <span><%=number_to_currency(armazenamento.produto.compras.last&.valor, :unit => "R$ ", :separator => ",", :delimiter => ".")%></span>
+                </div>
+                <%=link_to "Editar", edit_armazenamento_path(armazenamento), class: "link-edit"%>
+        
+            </div>
+        <%end%>
+    </div>
+
+</div>
+ 
