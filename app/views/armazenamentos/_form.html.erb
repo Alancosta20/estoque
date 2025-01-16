@@ -1,0 +1,9 @@
+<%= form_with model: @armazenamento do |formulario|%>
+     <div class = "container-formulario">
+        <%=formulario.label :quantidade%>
+        <%=formulario.number_field :quantidade, class: "text-input"%>
+
+        <%=formulario.submit "Salvar Estoque", class: "botao-enviar"%>
+
+    </div>
+<%end%>
