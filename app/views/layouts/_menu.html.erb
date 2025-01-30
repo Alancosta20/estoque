@@ -1,0 +1,29 @@
+
+<div class= "menu-container" >
+    
+    <div class= "profile">
+        <div><img src="https://i.pinimg.com/736x/bf/24/ef/bf24ef4f722678fcb771263dabdc184d.jpg" alt="foto de perfil" class= "img-profile"></div>
+        <div>
+            <h3>Lion Universe</h3>
+            <a class="link-editar" href="#">Editar</a>
+        </div>
+    </div>
+
+
+    <%= link_to armazenamentos_path, class: "link-menu" do %>
+        <i class="fa-solid fa-box"></i>
+        <span>Estoque</span> 
+    <%end%>
+    
+    <%= link_to compras_path, class: "link-menu" do %>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Compras</span> 
+
+    <%end%>
+    <%= link_to produtos_path, class: "link-menu" do %>
+        <i class="fa-solid fa-money-bill"></i>
+        <span>Produtos</span> 
+
+    <%end%>
+
+</div>
